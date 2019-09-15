@@ -1,4 +1,4 @@
-# frozen_string_literal => true
+# frozen_string_literal: true
 
 def leap?(year)
   if (year % 4).zero?
