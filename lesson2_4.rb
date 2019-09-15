@@ -6,4 +6,3 @@ index = 1
   hash[letter] = index if (letter.count 'aeiouy') == 1
   index += 1
 end
-

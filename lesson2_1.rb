@@ -18,4 +18,3 @@ months = {
 months.each do |key, value|
   puts key if value == 30
 end
-

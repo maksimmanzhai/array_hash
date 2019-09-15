@@ -58,5 +58,4 @@ if date.size == 2
   end
   count_of_day += date[1]
 end
-
 puts "This day is #{count_of_day}"

@@ -9,4 +9,3 @@ loop do
   array.push(array[index] + array[index + 1])
   index += 1
 end
-

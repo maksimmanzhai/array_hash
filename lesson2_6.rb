@@ -21,5 +21,4 @@ order.each do |key, value|
   summary += total
   puts "#{key}: #{total}"
 end
-
 puts "total for all products: #{summary}"
