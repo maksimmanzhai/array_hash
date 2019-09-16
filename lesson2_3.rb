@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
-array = Array.new(2, 1)
-index = 0
+array = [1, 1]
 
 loop do
-  break if (array[index] + array[index + 1]) > 100
+  break if (array[-1] + array[-2]) > 100
 
-  array.push(array[index] + array[index + 1])
-  index += 1
+  array.push(array[-1] + array[-2])
 end
