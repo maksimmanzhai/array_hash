@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
+LIMIT = 100
 array = [1, 1]
 
 loop do
-  break if (array[-1] + array[-2]) > 100
-
-  array.push(array[-1] + array[-2])
+  next_number = array[-1] + array[-2]
+  break if next_number > LIMIT
+  array << next_number
 end
