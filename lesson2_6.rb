@@ -11,14 +11,14 @@ loop do
   price = gets.chomp.to_f
   puts 'Enter count of product'
   count = gets.chomp.to_f
-  order[product] = [price, count]
+  order[product] = { price: price, count: count }
 end
 
 puts 'total for each product'
 summary = 0
-order.each do |key, value|
-  total = value[0] * value[1]
+order.each do |product, value|
+  total = order[product][:price] * order[product][:count]
   summary += total
-  puts "#{key}: #{total}"
+  puts "#{product}: #{total}"
 end
 puts "total for all products: #{summary}"
