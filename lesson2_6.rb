@@ -16,8 +16,8 @@ end
 
 puts 'total for each product'
 summary = 0
-order.each do |product, value|
-  total = order[product][:price] * order[product][:count]
+order.each do |product, product_info|
+  total = product_info[:price] * product_info[:count]
   summary += total
   puts "#{product}: #{total}"
 end
